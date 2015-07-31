@@ -86,7 +86,7 @@ let g:syntastic_enable_highlighting=1
 let g:syntastic_php_php_args='-l'
 
 "-------------------------
-" Start Neobundle Setting.
+" Neobundle設定
 "-------------------------
 if !1 | finish | endif
 
@@ -100,22 +100,19 @@ endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
 
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-NeoBundle 'joonty/vdebug'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'Townk/vim-autoclose'
-NeoBundle 'mattn/emmet-vim'
-NeoBundle 'thinca/vim-quickrun'
-NeoBundle 'sjl/badwolf'
-NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'scrooloose/syntastic'
+  NeoBundleFetch 'Shougo/neobundle.vim'
+  
+  NeoBundle 'joonty/vdebug'
+  NeoBundle 'scrooloose/nerdtree'
+  NeoBundle 'Townk/vim-autoclose'
+  NeoBundle 'mattn/emmet-vim'
+  NeoBundle 'thinca/vim-quickrun'
+  NeoBundle 'sjl/badwolf'
+  NeoBundle 'Shougo/neocomplcache'
+  NeoBundle 'scrooloose/syntastic'
 
 call neobundle#end()
 
 filetype plugin indent on
 
 NeoBundleCheck
-"-------------------------
-" End Neobundle Setting.
-"-------------------------
